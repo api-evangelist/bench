@@ -1,23 +1,88 @@
 aid: bench
+
 name: Bench
-description: 'Bench is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/64559587fb856f82933854bf/64c085f260dc48172089af7f_Frame_14510.jpg
+
+description: 'Bench provides online bookkeeping services for small businesses, offering a proprietary technology platform that handles ongoing monthly books, catch‑up bookkeeping, tax filing, and financial advisory. The company aims to simplify accounting with automated tools, fractional bookkeepers, and a suite of calculators and resources to help businesses understand profit margins, operational metrics, and inventory costs.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bench/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Accounting
+- Bookkeeping
+- Small Business
+- SaaS
+- Finance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/bench-plans-pricing.yml
+- type: Compliance
+  url: https://www.bench.co/security
+- type: Hosts
+  url: hosts/bench-hosts.yml
+- type: Vendors
+  url: vendors/bench-vendors.yml
+- type: TermsOfService
+  url: https://www.bench.co/terms
+- type: SignUp
+  url: https://www.bench.co/signup
+- type: Security
+  url: https://www.bench.co/security
+- type: PrivacyPolicy
+  url: https://www.bench.co/privacy
+- type: Pricing
+  url: https://www.bench.co/pricing
+- type: Newsroom
+  url: https://www.bench.co/press
+- type: ChangeLog
+  url: https://www.bench.co/whats-new
+- type: Blog
+  url: https://www.bench.co/blog
+- type: GettingStarted
+  url: https://help.bench.co/article-category/getting-started
+- type: Documentation
+  url: https://help.bench.co/
+- type: TrustCenter
+  url: security/bench-trust-center.yml
+- type: DomainSecurity
+  url: security/bench-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/bench
+  url: https://www.bench.co
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or gRPC spec found despite probing common spec endpoints.
+  evidence:
+    - url: https://api.bench.co/openapi.json
+      status: 404
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,23 @@
+generated: '2026-09-27'
+method: searched
+source: https://www.bench.co/pricing
+name: Bench API Plans
+audience: business-product
+pricing_basis: tiered-subscription
+published: true
+type: Pricing
+plans:
+  - name: Bookkeeping
+    price_text: "$399/mo"
+    price: 399
+    currency: USD
+    billing_period: month
+    features: []
+    limits: []
+  - name: Bookkeeping + Tax
+    price_text: "$649/mo"
+    price: 649
+    currency: USD
+    billing_period: month
+    features: []
+    limits: []
